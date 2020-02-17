@@ -42,3 +42,17 @@ body {
   background: $input-background;
   color: color-yiq($input-background);
 }
+
+@include media-breakpoint-down(md) {
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"],
+  select:focus,
+  textarea {
+    font-size: 16px;
+  }
+}
